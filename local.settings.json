@@ -1,8 +1,0 @@
-{
-  "IsEncrypted": false,
-  "Values": {
-    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
-    "FUNCTIONS_WORKER_RUNTIME": "node",
-    "OPENWEATHER_API_KEY": "d36ad86fcc0091b23f6132b4b6cc00e7"
-  }
-}
