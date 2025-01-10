@@ -10,7 +10,7 @@ function App() {
   const getWeather = async () => {
     try {
       const response = await axios.get(
-        `http://getweatherjma.azurewebsites.net/api/GetWeather?city=${city}`
+        `https://getweatherjma.azurewebsites.net/api/GetWeather?city=${city}`
       );
       setWeather(response.data);
       setError(null);
