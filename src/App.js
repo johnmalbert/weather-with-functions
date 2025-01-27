@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css'; // Import the CSS file for external styling
+import appInsights from './appInsights'; 
 
 function App() {
   const [city, setCity] = useState('');
@@ -9,6 +10,9 @@ function App() {
 
   const getWeather = async () => {
     try {
+      appInsights.trackEvent({ name: 'WeatherRequest' }, { city });
+      console.log('Weather request sent to App Insights');
+
       const response = await axios.get(
         `https://getweatherjma.azurewebsites.net/api/GetWeather?city=${city}`
       );
