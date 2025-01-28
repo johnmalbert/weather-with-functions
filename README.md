@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Weather with Functions
 
 This project is a proof of concept for an Azure Web App with an Azure Functions backend. When you send a request, a consumption-based Azure Functions App hits the Free Weather API and returns the current conditions to the client. This app also uses Azure App Insights to monitor which cities are requested. 
 
